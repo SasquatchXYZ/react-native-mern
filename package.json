@@ -1,0 +1,37 @@
+{
+  "name": "react-native-mern",
+  "version": "1.0.0",
+  "description": "Playing around with things for the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "/node_modules/babel-cli/bin/babel.js ./ --source-maps --out-dir dist",
+    "start": "/node_modules/nodemon/bin/nodemon.js -- node_modules/babel-cli/bin/babel-node.js server.js",
+    "populate": "/node_modules/babel-cli/bin/babel-node.js populate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SasquatchXYZ/react-native-mern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SasquatchXYZ/react-native-mern/issues"
+  },
+  "homepage": "https://github.com/SasquatchXYZ/react-native-mern#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.5",
+    "morgan": "^1.9.1"
+  }
+}
