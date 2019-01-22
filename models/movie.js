@@ -1,5 +1,7 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+import mongoose, {Schema} from 'mongoose';
+
+/*const mongoose = require('mongoose');
+const Schema = mongoose.Schema;*/
 
 const movieSchema = new Schema({
   title: {
@@ -12,4 +14,4 @@ const movieSchema = new Schema({
   times: Array
 });
 
-module.exports = movieSchema;
+export default mongoose.model('movie', movieSchema);
